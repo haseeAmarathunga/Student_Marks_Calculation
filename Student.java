@@ -28,19 +28,19 @@ public class Student {
         maths=math;
     }
     public char findGrade(){
-        if (avg >=75 && avg<=100){
+        if (avg >75 && avg<=100){
             grade= 'A';
 	    return grade;
         }
-        else if (avg>=65){
+        else if (avg>65){
             grade= 'B';
 	    return grade;
         }
-        else if (avg>=55){
+        else if (avg>55){
             grade= 'C';
 	    return grade;
         }
-        else if (avg>=45){
+        else if (avg>45){
             grade= 'D';
 	    return grade;
         }
@@ -56,7 +56,7 @@ public class Student {
 	System.out.println("Average : "+avg+"\nGrade :"+grade);
 } 
     public static void main(String[] args){
-        Student s1=new Student("2016cs023","Hasitha Amarathunga","Male","1996/01/01");
+        Student s1=new Student("2016cs023","Hasitha Amarathunga","Male","1997/01/01");
         s1.AddMarks(95,90,85);
        	s1.calculateStudentAverage();
 	s1.findGrade();
